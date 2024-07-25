@@ -23,7 +23,7 @@ def cmd():
         print(f"-s => {args.scount}")
         # TODO 명령어 카운트 
     elif args.top:
-        print("-t => {args.top}")
+        print(f"-t => {args.top}")
         if args.dt:
             print(f"-d => {args.dt}")
             # TODO 특정 날짜의 명령어 TOP N
