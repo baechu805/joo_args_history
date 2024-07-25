@@ -22,7 +22,7 @@ test = [
 
 [tool.pytest.ini_options]
 pythonpath = [
-  ".", "src"
+  ".", "src",
 ]
 
 [tool.pdm.scripts]
