@@ -1,4 +1,5 @@
 # joo_args_history
+- parquet 파일의 정보를 cli 기반으로 조회
 
 ### 사용법
 ```
@@ -19,3 +20,18 @@ mkdir 1932
   pdm 1220
    rm 1104
 ```
+
+## Dev env setting
+```
+$ git clone <url>
+$ cd <project_name>
+$ pdm install
+$ [pdm test|pytest]
+
+# option
+$ pdm add-dG test pytest pytest-cov
+```
+
+
+### ref
+- https://pdm-project.org/en/latest/usage/dependency/#add-development-only-dependencies
