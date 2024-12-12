@@ -1,6 +1,6 @@
 [project]
 name = "joo_args_history"
-version = "0.1.0"
+version = "0.2.0"
 description = "Default template for PDM package"
 authors = [
     {name = "baechu805", email = "bjoo606@naver.com"},
@@ -13,3 +13,28 @@ license = {text = "MIT"}
 
 [tool.pdm]
 distribution = false
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=8.3.1",
+    "pytest-cov>=5.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  ".", "src",
+]
+
+[tool.pdm.scripts]
+test = "pytest "
+ctest = "pytest --cov"
+stest = "pytest -s"
+giti = "pip install git+https://github.com/baechu805/joo_args_history.git@0.2.0-args"
+
+
+[project.scripts]
+my-history = "joo_args_history.cli:cmd"
+
+[project.urls]
+Homepage = "https://github.com/baechu805/joo_args_history/issues"
+Issues = "https://github.com/baechu805/joo_args_history/issues"
